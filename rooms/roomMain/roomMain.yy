@@ -10,6 +10,7 @@
     {"name":"inst_618EEC7D","path":"rooms/roomMain/roomMain.yy",},
     {"name":"inst_398272F1","path":"rooms/roomMain/roomMain.yy",},
     {"name":"inst_C61EFDD","path":"rooms/roomMain/roomMain.yy",},
+    {"name":"inst_5562031F","path":"rooms/roomMain/roomMain.yy",},
   ],
   "isDnd": false,
   "layers": [
@@ -17,15 +18,12 @@
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_618EEC7D","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"objCamera","path":"objects/objCamera/objCamera.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":0.0,"y":0.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_398272F1","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"objPlayer","path":"objects/objPlayer/objPlayer.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":64.0,"y":96.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_C61EFDD","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"objGrenadeLauncher","path":"objects/objGrenadeLauncher/objGrenadeLauncher.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":96.0,"y":96.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_5562031F","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"objEnemyTrashbag","path":"objects/objEnemyTrashbag/objEnemyTrashbag.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":256.0,"y":64.0,},
       ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
-    {"resourceType":"GMRTileLayer","resourceVersion":"1.1","name":"Obstacle","depth":100,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[],"tiles":{"SerialiseHeight":15,"SerialiseWidth":20,"TileCompressedData":[
--52,-2147483648,-3,0,-16,-2147483648,-4,0,-13,-2147483648,3,0,-2147483648,-2147483648,-5,0,-10,-2147483648,-11,0,
--10,-2147483648,-3,0,-12,-2147483648,-8,0,-2,1,-10,-2147483648,-8,0,-19,-2147483648,1,0,-110,-2147483648,
-],"TileDataFormat":1,},"tilesetId":{"name":"tilObstacle","path":"tilesets/tilObstacle/tilObstacle.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
-    {"resourceType":"GMRTileLayer","resourceVersion":"1.1","name":"Solid","depth":200,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[],"tiles":{"SerialiseHeight":15,"SerialiseWidth":20,"TileCompressedData":[
--71,-2147483648,-5,0,-4,-2147483648,1,1,-7,-2147483648,-10,0,-2,-2147483648,-2,1,-4,-2147483648,-11,0,
--3,-2147483648,-3,1,-4,-2147483648,-2,0,6,1,0,-2147483648,1,0,0,-5,-2147483648,-4,1,-2,
--2147483648,-2,0,-2,1,-2,-2147483648,-2,1,-2,0,-4,-2147483648,-20,1,-120,-2147483648,],"TileDataFormat":1,},"tilesetId":{"name":"tilSolid","path":"tilesets/tilSolid/tilSolid.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
+    {"resourceType":"GMRTileLayer","resourceVersion":"1.1","name":"Obstacle","depth":100,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[],"tiles":{"SerialiseHeight":68,"SerialiseWidth":120,"TileCompressedData":[
+-252,-2147483648,-3,0,-116,-2147483648,-4,0,-113,-2147483648,3,0,-2147483648,-2147483648,-5,0,-110,-2147483648,-11,0,-110,-2147483648,-3,0,-112,-2147483648,-8,0,-2,1,-110,-2147483648,-8,0,-119,-2147483648,1,0,-7070,-2147483648,],"TileDataFormat":1,},"tilesetId":{"name":"tilObstacle","path":"tilesets/tilObstacle/tilObstacle.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
+    {"resourceType":"GMRTileLayer","resourceVersion":"1.1","name":"Solid","depth":200,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[],"tiles":{"SerialiseHeight":68,"SerialiseWidth":120,"TileCompressedData":[
+-371,-2147483648,-5,0,-104,-2147483648,1,1,-7,-2147483648,-10,0,-102,-2147483648,-2,1,-4,-2147483648,-11,0,-103,-2147483648,-3,1,-4,-2147483648,-2,0,6,1,0,-2147483648,1,0,0,-34,-2147483648,1,1,-70,-2147483648,-4,1,-2,-2147483648,-2,0,-2,1,-2,-2147483648,-2,1,-2,0,-33,-2147483648,1,1,-70,-2147483648,-50,1,-7150,-2147483648,],"TileDataFormat":1,},"tilesetId":{"name":"tilSolid","path":"tilesets/tilSolid/tilSolid.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
     {"resourceType":"GMRBackgroundLayer","resourceVersion":"1.0","name":"Background","animationFPS":15.0,"animationSpeedType":0,"colour":4281545523,"depth":300,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"hspeed":0.0,"htiled":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[],"spriteId":null,"stretch":false,"userdefinedAnimFPS":false,"userdefinedDepth":false,"visible":true,"vspeed":0.0,"vtiled":false,"x":0,"y":0,},
   ],
   "parent": {
@@ -41,10 +39,10 @@
     "PhysicsWorldPixToMetres": 0.1,
   },
   "roomSettings": {
-    "Height": 240,
+    "Height": 1080,
     "inheritRoomSettings": false,
     "persistent": false,
-    "Width": 320,
+    "Width": 1920,
   },
   "sequenceId": null,
   "views": [
