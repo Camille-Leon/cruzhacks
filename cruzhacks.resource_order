@@ -17,7 +17,8 @@
     {"name":"Particle Systems","order":15,"path":"folders/Particle Systems.yy",},
   ],
   "ResourceOrderSettings": [
-    {"name":"sprGripPistol","order":1,"path":"sprites/sprGripPistol/sprGripPistol.yy",},
-    {"name":"sprRecieverBottle","order":2,"path":"sprites/sprRecieverBottle/sprRecieverBottle.yy",},
+    {"name":"objPlayer","order":1,"path":"objects/objPlayer/objPlayer.yy",},
+    {"name":"sprPlayer","order":3,"path":"sprites/sprPlayer/sprPlayer.yy",},
+    {"name":"sprSolid","order":4,"path":"sprites/sprSolid/sprSolid.yy",},
   ],
 }

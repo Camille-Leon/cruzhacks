@@ -34,11 +34,11 @@
     "IDEVersion": "2023.11.1.129",
   },
   "resources": [
-    {"id":{"name":"scrWeapons","path":"scripts/scrWeapons/scrWeapons.yy",},},
-    {"id":{"name":"sprGripPistol","path":"sprites/sprGripPistol/sprGripPistol.yy",},},
-    {"id":{"name":"sprBarrelPeapod","path":"sprites/sprBarrelPeapod/sprBarrelPeapod.yy",},},
-    {"id":{"name":"sprRecieverBottle","path":"sprites/sprRecieverBottle/sprRecieverBottle.yy",},},
+    {"id":{"name":"objPlayer","path":"objects/objPlayer/objPlayer.yy",},},
+    {"id":{"name":"sprPlayer","path":"sprites/sprPlayer/sprPlayer.yy",},},
     {"id":{"name":"objCamera","path":"objects/objCamera/objCamera.yy",},},
+    {"id":{"name":"sprSolid","path":"sprites/sprSolid/sprSolid.yy",},},
+    {"id":{"name":"tilSolid","path":"tilesets/tilSolid/tilSolid.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
   ],
   "RoomOrderNodes": [

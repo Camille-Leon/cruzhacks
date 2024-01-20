@@ -25,5 +25,3 @@ scale_window = function() {
 }	
 
 center_window();
-
-instance_create_layer(0, 0, layer, objTest);
