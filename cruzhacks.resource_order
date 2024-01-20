@@ -16,5 +16,8 @@
     {"name":"Extensions","order":14,"path":"folders/Extensions.yy",},
     {"name":"Particle Systems","order":15,"path":"folders/Particle Systems.yy",},
   ],
-  "ResourceOrderSettings": [],
+  "ResourceOrderSettings": [
+    {"name":"sprGripPistol","order":1,"path":"sprites/sprGripPistol/sprGripPistol.yy",},
+    {"name":"sprRecieverBottle","order":2,"path":"sprites/sprRecieverBottle/sprRecieverBottle.yy",},
+  ],
 }
