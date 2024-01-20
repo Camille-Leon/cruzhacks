@@ -1,4 +1,5 @@
 var _solids = layer_tilemap_get_id(layer_get_id("Solid"));
+var _obstacles = layer_tilemap_get_id(layer_get_id("Obstacle"));
 
 var _hori = keyboard_check(ord("D")) - keyboard_check(ord("A"));
 var _onGround = place_meeting(x, y + 1, _solids);
@@ -37,3 +38,15 @@ if (place_meeting(x, y + ySpd, _solids)) {
 }
 
 y += ySpd;
+
+if (place_meeting(x, y, _obstacles)) {
+
+	global.heartArray[array_length(global.heartArray) - 1].on_damage();
+
+}
+
+if (array_length(global.heartArray) <= 0){
+	
+	game_end();
+}
+	
