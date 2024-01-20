@@ -4,6 +4,10 @@ camera_angle = 0;
 camera_zoom = 1;
 camera_shake = 0;
 
+peekAmount = 4;
+
+surf = -1; // GUI
+
 impact = 0;
 
 #macro processImpact if(objCamera.impact>0){exit;}
