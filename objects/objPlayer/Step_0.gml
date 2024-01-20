@@ -72,4 +72,5 @@ if (place_meeting(x, y, _obstacles)) and (canTakeDamage) {
 		room_goto(roomGameOver);
 	}
 }
+
 	

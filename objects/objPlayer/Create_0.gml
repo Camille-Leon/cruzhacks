@@ -13,11 +13,13 @@ damageTimer = time_source_create(time_source_game, 30, time_source_units_frames,
 	canTakeDamage = true;
 })
 
+
+
 takeDamage = function(_removeHeart = false) {
 	// Yippee
 	image_blend = c_red;
 	canTakeDamage = false;
-	
+	faceChange(6, 60)
 	time_source_start(damageTimer);
 	
 	if (_removeHeart) {

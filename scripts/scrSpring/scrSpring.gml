@@ -30,3 +30,14 @@ function spring_speed_set(_id, _value) {
 function remap(_val, _from1, _to1, _from2, _to2) {
     return (_from2 + ((_to2 - _from2) / (_to1 - _from1)) * (_val - _from1));
 }
+
+function faceChange(_frame, _time){
+	
+	playerFaceFrame = _frame
+	faceTimer = time_source_create(time_source_game, _time, time_source_units_frames, function() {
+		playerFaceFrame = 0
+	})
+	
+	time_source_start(faceTimer);
+	
+}
