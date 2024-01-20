@@ -2,7 +2,7 @@ if (flash) {
 	shader_set(shdFlash);	
 }
 
-draw_sprite_ext(sprite_index, 0, x, y, 1 + xScaleOffset, 1 + yScaleOffset, xSpd * 2, image_blend, 1);
+draw_sprite_ext(sprite_index, image_index, x, y, 1 + xScaleOffset, 1 + yScaleOffset, xSpd * 4, image_blend, 1);
 
 var _i
 for (_i = 0; _i < array_length(heartArray); _i++) {

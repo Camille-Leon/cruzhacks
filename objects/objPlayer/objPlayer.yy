@@ -30,9 +30,12 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "sprPlayer",
-    "path": "sprites/sprPlayer/sprPlayer.yy",
+    "name": "sprPlayerIdle",
+    "path": "sprites/sprPlayerIdle/sprPlayerIdle.yy",
   },
-  "spriteMaskId": null,
+  "spriteMaskId": {
+    "name": "sprPlayerIdle",
+    "path": "sprites/sprPlayerIdle/sprPlayerIdle.yy",
+  },
   "visible": true,
 }

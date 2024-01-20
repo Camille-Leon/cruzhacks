@@ -7,6 +7,17 @@ var _obstacles = layer_tilemap_get_id(layer_get_id("Obstacle"));
 var _hori = keyboard_check(ord("D")) - keyboard_check(ord("A"));
 var _onGround = place_meeting(x, y + 1, _solids);
 
+if (_onGround) {
+	if (_hori != 0) {
+		sprite_index = sprPlayerWalk;	
+	} else {
+		sprite_index = sprPlayerIdle;	
+	}
+} else {
+	sprite_index = sprPlayerWalk;
+	image_index = 1;
+}
+
 var _friction = _onGround ? 0.3 : 0.1
 xSpd = lerp(xSpd, _hori * moveSpeed, _friction);
 ySpd += grv;
@@ -17,8 +28,8 @@ lastHeartAnimation = spring("lastHeartAnimation", lastHeartAnimation, 0);
 
 if (_onGround) and (keyboard_check_pressed(ord("W"))) {
 	ySpd = -4.5; // Jumping	
-	xScaleOffset = 0.3;
-	yScaleOffset = -0.3;
+	xScaleOffset += 0.3;
+	yScaleOffset -= 0.3;
 }
 
 if (place_meeting(x + xSpd, y, _solids)) {
@@ -35,8 +46,8 @@ if (place_meeting(x, y + ySpd, _solids)) {
         y += sign(ySpd);    
     }
 	if (ySpd > 1) {
-		yScaleOffset = -0.2;
-		xScaleOffset = 0.2;
+		yScaleOffset -= 0.2;
+		xScaleOffset += 0.2;
 	}
     ySpd = 0;
 }
