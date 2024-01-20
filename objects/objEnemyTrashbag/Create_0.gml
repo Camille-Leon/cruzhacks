@@ -9,3 +9,5 @@ jumpTimer = time_source_create(time_source_game, 60 * 1.5, time_source_units_fra
 time_source_start(jumpTimer);
 
 image_speed = 0;
+
+hp = 1
