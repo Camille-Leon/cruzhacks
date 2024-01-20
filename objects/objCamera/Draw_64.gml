@@ -23,6 +23,8 @@ if (objPlayer.flash) {
 	shader_reset();
 }
 
+draw_text_transformed(0, 0, string(fps) + " FPS", 0.5, 0.5, 0);
+
 surface_reset_target()
 
 draw_surface(surf, 0, 0);

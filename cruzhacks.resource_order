@@ -45,6 +45,7 @@
     {"name":"sprSolid","order":1,"path":"sprites/sprSolid/sprSolid.yy",},
     {"name":"objEffectLine","order":1,"path":"objects/objEffectLine/objEffectLine.yy",},
     {"name":"objPlayer","order":11,"path":"objects/objPlayer/objPlayer.yy",},
+    {"name":"objKillZone","order":13,"path":"objects/objKillZone/objKillZone.yy",},
     {"name":"scrHeart","order":1,"path":"scripts/scrHeart/scrHeart.yy",},
   ],
 }
