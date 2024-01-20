@@ -1,8 +1,8 @@
 // this code sucks :)
 
-function Heart(_sprite) constructor {
+function Heart(_sprite, _frame = 0) constructor {
 	sprite = _sprite;
-	frame = 0;
+	frame = _frame;
 	on_damage = function() {
 		if (frame == 0) {
 			objPlayer.takeDamage();

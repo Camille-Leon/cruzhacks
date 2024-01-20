@@ -54,6 +54,10 @@ if (place_meeting(x, y + ySpd, _solids)) {
 
 y += ySpd;
 
+if (mouse_check_button_pressed(mb_right)) {
+	instance_create_layer(mouse_x, mouse_y, layer, choose(objPickupHeart, objPickupHalfHeart));	
+}
+
 if (place_meeting(x, y, _obstacles)) and (canTakeDamage) {
 	heartArray[array_length(heartArray) - 1].on_damage();
 	ySpd = -5;
@@ -65,7 +69,7 @@ if (place_meeting(x, y, _obstacles)) and (canTakeDamage) {
 	spring_speed_set("lastHeartAnimation", choose(-2, 2));
 	
 	if (array_length(heartArray) <= 0) {
-		game_end();	
+		room_goto(GameOver);
 	}
 }
 	
