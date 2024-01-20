@@ -40,6 +40,7 @@
   },
   "resources": [
     {"id":{"name":"objEnemyParent","path":"objects/objEnemyParent/objEnemyParent.yy",},},
+    {"id":{"name":"scrCollision","path":"scripts/scrCollision/scrCollision.yy",},},
     {"id":{"name":"shdFlash","path":"shaders/shdFlash/shdFlash.yy",},},
     {"id":{"name":"objPickupHeart","path":"objects/objPickupHeart/objPickupHeart.yy",},},
     {"id":{"name":"tilObstacle","path":"tilesets/tilObstacle/tilObstacle.yy",},},
@@ -61,6 +62,7 @@
     {"id":{"name":"roomGameOver","path":"rooms/roomGameOver/roomGameOver.yy",},},
     {"id":{"name":"objPickupParent","path":"objects/objPickupParent/objPickupParent.yy",},},
     {"id":{"name":"sprTrashbag","path":"sprites/sprTrashbag/sprTrashbag.yy",},},
+    {"id":{"name":"sprPlayerJump","path":"sprites/sprPlayerJump/sprPlayerJump.yy",},},
     {"id":{"name":"objGrenadeParent","path":"objects/objGrenadeParent/objGrenadeParent.yy",},},
     {"id":{"name":"sprObstacle","path":"sprites/sprObstacle/sprObstacle.yy",},},
     {"id":{"name":"sprSolid","path":"sprites/sprSolid/sprSolid.yy",},},

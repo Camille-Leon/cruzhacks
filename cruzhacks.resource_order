@@ -22,6 +22,7 @@
     {"name":"Timelines","order":8,"path":"folders/Timelines.yy",},
   ],
   "ResourceOrderSettings": [
+    {"name":"scrCollision","order":2,"path":"scripts/scrCollision/scrCollision.yy",},
     {"name":"objPickupHeart","order":1,"path":"objects/objPickupHeart/objPickupHeart.yy",},
     {"name":"tilObstacle","order":1,"path":"tilesets/tilObstacle/tilObstacle.yy",},
     {"name":"objCamera","order":10,"path":"objects/objCamera/objCamera.yy",},
@@ -39,6 +40,7 @@
     {"name":"roomGameOver","order":1,"path":"rooms/roomGameOver/roomGameOver.yy",},
     {"name":"objPickupParent","order":2,"path":"objects/objPickupParent/objPickupParent.yy",},
     {"name":"sprTrashbag","order":10,"path":"sprites/sprTrashbag/sprTrashbag.yy",},
+    {"name":"sprPlayerJump","order":11,"path":"sprites/sprPlayerJump/sprPlayerJump.yy",},
     {"name":"sprObstacle","order":4,"path":"sprites/sprObstacle/sprObstacle.yy",},
     {"name":"sprSolid","order":1,"path":"sprites/sprSolid/sprSolid.yy",},
     {"name":"objEffectLine","order":1,"path":"objects/objEffectLine/objEffectLine.yy",},

@@ -8,14 +8,17 @@ var _hori = keyboard_check(ord("D")) - keyboard_check(ord("A"));
 var _onGround = place_meeting(x, y + 1, _solids);
 
 if (_onGround) {
+	if (sprite_index == sprPlayerJump) {
+		yScaleOffset -= 0.2;
+		xScaleOffset += 0.2;	
+	}
 	if (_hori != 0) {
 		sprite_index = sprPlayerWalk;	
 	} else {
 		sprite_index = sprPlayerIdle;	
 	}
 } else {
-	sprite_index = sprPlayerWalk;
-	image_index = 1;
+	sprite_index = sprPlayerJump;
 }
 
 var _friction = _onGround ? 0.3 : 0.1
@@ -32,27 +35,7 @@ if (_onGround) and (keyboard_check_pressed(ord("W"))) {
 	yScaleOffset -= 0.3;
 }
 
-if (place_meeting(x + xSpd, y, _solids)) {
-    while !(place_meeting(x + sign(xSpd), y, _solids)) {
-        x += sign(xSpd);    
-    }
-    xSpd = 0;
-}
-
-x += xSpd;
-
-if (place_meeting(x, y + ySpd, _solids)) {
-    while !(place_meeting(x, y + sign(ySpd), _solids)) {
-        y += sign(ySpd);    
-    }
-	if (ySpd > 1) {
-		yScaleOffset -= 0.2;
-		xScaleOffset += 0.2;
-	}
-    ySpd = 0;
-}
-
-y += ySpd;
+collide(_solids);
 
 if (mouse_check_button_pressed(mb_right)) {
 	instance_create_layer(mouse_x, mouse_y, layer, choose(objPickupHeart, objPickupHalfHeart));	
