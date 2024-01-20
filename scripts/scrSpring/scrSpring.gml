@@ -27,6 +27,20 @@ function spring_speed_set(_id, _value) {
     variable_struct_set(spring_manager, _id, _value)
 }
 
+function grenade_explode(_radius, _whitelist, _foreach) {
+	var _list = ds_list_create();
+	var _num = collision_circle_list(x, y, _radius, _whitelist, false, true, _list, false);
+	if (_num > 0)
+	{
+	    for (var i = 0; i < _num; ++i;)
+	    {
+			var _other = _list[| i];
+			_foreach(_other);
+	    }
+	}
+	ds_list_destroy(_list);	
+}
+
 function remap(_val, _from1, _to1, _from2, _to2) {
     return (_from2 + ((_to2 - _from2) / (_to1 - _from1)) * (_val - _from1));
 }

@@ -1,6 +1,7 @@
 radius = 32;
 
 lifetime = 6;
+outline = false;
 image_blend = c_white;
 
 direction = irandom(360);

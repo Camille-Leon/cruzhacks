@@ -42,14 +42,14 @@ if (_onGround) and (keyboard_check_pressed(ord("W"))) {
 }
 
 if (iFrames) {
-	image_blend = c_red;	
+	visible = !visible;	
 } else {
-	image_blend = c_white;
+	visible = true;
 }
 
 collide(_solids);
 
-if (mouse_check_button_pressed(mb_right)) {
+if (keyboard_check_pressed(ord("H"))) {
 	instance_create_layer(mouse_x, mouse_y, layer, choose(objPickupHeart, objPickupHalfHeart));	
 }
 

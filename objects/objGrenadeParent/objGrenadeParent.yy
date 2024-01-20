@@ -28,10 +28,7 @@
   "physicsStartAwake": true,
   "properties": [],
   "solid": false,
-  "spriteId": {
-    "name": "sprGrenade",
-    "path": "sprites/sprGrenade/sprGrenade.yy",
-  },
+  "spriteId": null,
   "spriteMaskId": null,
   "visible": true,
 }
