@@ -20,7 +20,8 @@ if (untilExplosion <= 0) {
 	{
 	    for (var i = 0; i < _num; ++i;)
 	    {
-	        _list[| i].hp -= dmg;
+			var _other = _list[| i];
+	        _other.hp -= dmg;		
 	    }
 	}
 	ds_list_destroy(_list);

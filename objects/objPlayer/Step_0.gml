@@ -1,5 +1,11 @@
 processImpact
 flash = clamp(flash - 1, 0, 120);
+iFrames = clamp(iFrames - 1, 0, 120);
+faceTimer = clamp(faceTimer - 1, 0, 120);
+
+if (faceTimer <= 0) {
+	playerFaceFrame = 0;	
+}
 
 var _solids = layer_tilemap_get_id(layer_get_id("Solid"));
 var _obstacles = layer_tilemap_get_id(layer_get_id("Obstacle"));
@@ -35,13 +41,19 @@ if (_onGround) and (keyboard_check_pressed(ord("W"))) {
 	yScaleOffset -= 0.3;
 }
 
+if (iFrames) {
+	image_blend = c_red;	
+} else {
+	image_blend = c_white;
+}
+
 collide(_solids);
 
 if (mouse_check_button_pressed(mb_right)) {
 	instance_create_layer(mouse_x, mouse_y, layer, choose(objPickupHeart, objPickupHalfHeart));	
 }
 
-if (place_meeting(x, y, _obstacles)) and (canTakeDamage) {
+if (place_meeting(x, y, _obstacles)) and (iFrames <= 0) {
 	heartArray[array_length(heartArray) - 1].on_damage();
 	ySpd = -5;
 	xSpd += choose(-2, 2);

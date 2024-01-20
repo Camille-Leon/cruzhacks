@@ -2,25 +2,16 @@ heartArray = [];
 lastHeartAnimation = 0;
 
 playerFaceFrame = 0;
+faceTimer = 0;
 
 repeat 5 {
 	array_push(heartArray, new Heart(sprHeart))
 }
 
-damageTimer = time_source_create(time_source_game, 30, time_source_units_frames, function() {
-	// Whatever happens when you finish taking damage
-	image_blend = c_white;
-	canTakeDamage = true;
-})
-
-
-
 takeDamage = function(_removeHeart = false) {
 	// Yippee
-	image_blend = c_red;
-	canTakeDamage = false;
-	faceChange(6, 60)
-	time_source_start(damageTimer);
+	player_change_face(6, 60);
+	iFrames = 60;
 	
 	if (_removeHeart) {
 		array_pop(heartArray);	
@@ -28,8 +19,7 @@ takeDamage = function(_removeHeart = false) {
 }
 
 flash = 0;
-
-canTakeDamage = true; // Invincibility
+iFrames = 0;
 
 xSpd = 0;
 ySpd = 0;
