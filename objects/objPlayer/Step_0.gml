@@ -69,7 +69,7 @@ if (place_meeting(x, y, _obstacles)) and (canTakeDamage) {
 	spring_speed_set("lastHeartAnimation", choose(-2, 2));
 	
 	if (array_length(heartArray) <= 0) {
-		room_goto(GameOver);
+		room_goto(roomGameOver);
 	}
 }
 	

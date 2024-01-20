@@ -8,8 +8,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "group1",
-    "path": "folders/Objects/group1.yy",
+    "name": "Pickups",
+    "path": "folders/Objects/Pickups.yy",
   },
   "parentObjectId": {
     "name": "objPickupHeart",

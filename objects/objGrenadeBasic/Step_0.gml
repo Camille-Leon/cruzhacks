@@ -6,3 +6,13 @@ xSpd = lerp(xSpd, 0, 0.03)
 ySpd += grv;
 
 collide(_solids);
+
+untilExplosion--
+
+if (untilExplosion <= 0) {
+	instance_create_layer(x + irandom_range(-8, 8), y + irandom_range(-8, 8), layer, objEffectExplosion);
+	objCamera.camera_shake = 4;
+	objCamera.impact = 4;
+	
+	instance_destroy()
+}

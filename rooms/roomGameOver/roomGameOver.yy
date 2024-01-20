@@ -1,14 +1,14 @@
 {
   "resourceType": "GMRoom",
   "resourceVersion": "1.0",
-  "name": "GameOver",
+  "name": "roomGameOver",
   "creationCodeFile": "",
   "inheritCode": false,
   "inheritCreationOrder": false,
   "inheritLayers": false,
   "instanceCreationOrder": [
-    {"name":"inst_7EC6D50D","path":"rooms/GameOver/GameOver.yy",},
-    {"name":"inst_6D217096","path":"rooms/GameOver/GameOver.yy",},
+    {"name":"inst_7EC6D50D","path":"rooms/roomGameOver/roomGameOver.yy",},
+    {"name":"inst_6D217096","path":"rooms/roomGameOver/roomGameOver.yy",},
   ],
   "isDnd": false,
   "layers": [
