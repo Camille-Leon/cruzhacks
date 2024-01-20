@@ -1,4 +1,6 @@
+speed = 0;
 processImpact
+speed = speedTemp;
 
 lifetime--
 

@@ -8,6 +8,4 @@ if (flash) {
 	shader_reset();	
 }
 
-draw_text_transformed(0, 0, string(fps) + " FPS", 0.5, 0.5, 0);
-
 draw_sprite_ext(sprPlayerFace, playerFaceFrame, x, y - 16, 1 + xScaleOffset, 1 + yScaleOffset, xSpd * 4, c_white, 1);

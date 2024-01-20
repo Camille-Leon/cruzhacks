@@ -5,6 +5,7 @@ image_blend = c_white;
 
 direction = irandom(360);
 speed = 0.5;
+speedTemp = speed;
 
 repeat 3 {
 	var _dir = irandom(360);

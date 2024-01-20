@@ -3,6 +3,12 @@ event_inherited();
 var _solids = layer_tilemap_get_id(layer_get_id("Solid"));
 var _onGround = place_meeting(x, y + 1, _solids);
 
+if (iFrames) {
+	image_blend = c_red;	
+} else {
+	image_blend = c_white;
+}
+
 xSpd = lerp(xSpd, 0, 0.05)
 ySpd += grv;
 
