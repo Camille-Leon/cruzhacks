@@ -1,11 +1,31 @@
-global.heartArray = [];
+heartArray = [];
+lastHeartAnimation = 0;
+
 repeat 5 {
-
-array_push(global.heartArray, new Heart(sprHeart))
-
+	array_push(heartArray, new Heart(sprHeart))
 }
 
-global.playerColor = c_white
+damageTimer = time_source_create(time_source_game, 30, time_source_units_frames, function() {
+	// Whatever happens when you finish taking damage
+	image_blend = c_white;
+	canTakeDamage = true;
+})
+
+takeDamage = function(_removeHeart = false) {
+	// Yippee
+	image_blend = c_red;
+	canTakeDamage = false;
+	
+	time_source_start(damageTimer);
+	
+	if (_removeHeart) {
+		array_pop(heartArray);	
+	}
+}
+
+flash = 0;
+
+canTakeDamage = true; // Invincibility
 
 xSpd = 0;
 ySpd = 0;

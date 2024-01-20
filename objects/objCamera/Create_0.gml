@@ -4,6 +4,10 @@ camera_angle = 0;
 camera_zoom = 1;
 camera_shake = 0;
 
+impact = 0;
+
+#macro processImpact if(objCamera.impact>0){exit;}
+
 x = room_width / 2;
 y = room_height / 2;
 

@@ -26,3 +26,7 @@ function spring_speed_set(_id, _value) {
     
     variable_struct_set(spring_manager, _id, _value)
 }
+
+function remap(_val, _from1, _to1, _from2, _to2) {
+    return (_from2 + ((_to2 - _from2) / (_to1 - _from1)) * (_val - _from1));
+}

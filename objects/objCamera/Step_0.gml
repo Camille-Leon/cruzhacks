@@ -1,6 +1,10 @@
 var _camera = view_camera[0];
 
 if (_camera) {
+	impact = clamp(impact - 1, 0, 120);
+	
+	processImpact
+	
 	camera_shake = lerp(camera_shake, 0, 0.1);
 	
 	camera_angle = camera_shake / 4

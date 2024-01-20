@@ -1,3 +1,5 @@
+processImpact
+
 x = lerp(x, (objPlayer.x) + lengthdir_x(24, pointingDirection), 0.6);
 y = lerp(y, (objPlayer.y - objPlayer.sprite_height / 2) + lengthdir_y(24, pointingDirection), 0.6);
 

@@ -1,3 +1,6 @@
+processImpact
+flash = clamp(flash - 1, 0, 120);
+
 var _solids = layer_tilemap_get_id(layer_get_id("Solid"));
 var _obstacles = layer_tilemap_get_id(layer_get_id("Obstacle"));
 
@@ -10,6 +13,7 @@ ySpd += grv;
 
 xScaleOffset = spring("xScaleOffset", xScaleOffset, 0);
 yScaleOffset = spring("yScaleOffset", yScaleOffset, 0);
+lastHeartAnimation = spring("lastHeartAnimation", lastHeartAnimation, 0);
 
 if (_onGround) and (keyboard_check_pressed(ord("W"))) {
 	ySpd = -4.5; // Jumping	
@@ -39,14 +43,18 @@ if (place_meeting(x, y + ySpd, _solids)) {
 
 y += ySpd;
 
-if (place_meeting(x, y, _obstacles)) {
-
-	global.heartArray[array_length(global.heartArray) - 1].on_damage();
-
-}
-
-if (array_length(global.heartArray) <= 0){
+if (place_meeting(x, y, _obstacles)) and (canTakeDamage) {
+	heartArray[array_length(heartArray) - 1].on_damage();
+	ySpd = -5;
+	xSpd += choose(-2, 2);
 	
-	game_end();
+	objCamera.camera_shake = 2;
+	objCamera.impact = 4;
+	flash = 8;
+	spring_speed_set("lastHeartAnimation", choose(-2, 2));
+	
+	if (array_length(heartArray) <= 0) {
+		game_end();	
+	}
 }
 	

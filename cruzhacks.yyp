@@ -36,6 +36,7 @@
   },
   "resources": [
     {"id":{"name":"scrHeart","path":"scripts/scrHeart/scrHeart.yy",},},
+    {"id":{"name":"shdFlash","path":"shaders/shdFlash/shdFlash.yy",},},
     {"id":{"name":"tilObstacle","path":"tilesets/tilObstacle/tilObstacle.yy",},},
     {"id":{"name":"sprGrenadeLauncher","path":"sprites/sprGrenadeLauncher/sprGrenadeLauncher.yy",},},
     {"id":{"name":"sprGrenade","path":"sprites/sprGrenade/sprGrenade.yy",},},
