@@ -14,5 +14,16 @@ if (untilExplosion <= 0) {
 	objCamera.camera_shake = 4;
 	objCamera.impact = 4;
 	
+	var _list = ds_list_create();
+	var _num = collision_circle_list(x, y, 32, objEnemyParent, false, true, _list, false);
+	if (_num > 0)
+	{
+	    for (var i = 0; i < _num; ++i;)
+	    {
+	        _list[| i].hp -= dmg;
+	    }
+	}
+	ds_list_destroy(_list);
+	
 	instance_destroy()
 }

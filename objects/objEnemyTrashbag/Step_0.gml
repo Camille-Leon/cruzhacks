@@ -12,5 +12,4 @@ if !(_onGround) {
 	image_index = 0;	
 }
 
-collide_bounce(_solids, 0.3);
-
+collide_bounce(_solids, 0.3)
