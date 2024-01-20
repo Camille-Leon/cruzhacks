@@ -1,6 +1,8 @@
 heartArray = [];
 lastHeartAnimation = 0;
 
+playerFaceFrame = 0;
+
 repeat 5 {
 	array_push(heartArray, new Heart(sprHeart))
 }
