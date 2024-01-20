@@ -15,8 +15,13 @@
     {"name":"Notes","order":13,"path":"folders/Notes.yy",},
     {"name":"Extensions","order":14,"path":"folders/Extensions.yy",},
     {"name":"Particle Systems","order":15,"path":"folders/Particle Systems.yy",},
+    {"name":"Grenades","order":2,"path":"folders/Objects/Grenades.yy",},
   ],
   "ResourceOrderSettings": [
+    {"name":"sprGrenadeLauncher","order":6,"path":"sprites/sprGrenadeLauncher/sprGrenadeLauncher.yy",},
+    {"name":"sprGrenade","order":5,"path":"sprites/sprGrenade/sprGrenade.yy",},
+    {"name":"objGrenadeBasic","order":1,"path":"objects/objGrenadeBasic/objGrenadeBasic.yy",},
+    {"name":"objGrenadeLauncher","order":3,"path":"objects/objGrenadeLauncher/objGrenadeLauncher.yy",},
     {"name":"objPlayer","order":1,"path":"objects/objPlayer/objPlayer.yy",},
     {"name":"sprPlayer","order":3,"path":"sprites/sprPlayer/sprPlayer.yy",},
     {"name":"sprSolid","order":4,"path":"sprites/sprSolid/sprSolid.yy",},
