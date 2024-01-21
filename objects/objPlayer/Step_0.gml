@@ -1,4 +1,6 @@
 processImpact
+show_debug_message("TET")
+
 flash = clamp(flash - 1, 0, 120);
 iFrames = clamp(iFrames - 1, 0, 120);
 faceTimer = clamp(faceTimer - 1, 0, 120);
@@ -8,7 +10,6 @@ if (faceTimer <= 0) {
 }
 
 var _solids = layer_tilemap_get_id(layer_get_id("Solid"));
-var _obstacles = layer_tilemap_get_id(layer_get_id("Obstacle"));
 
 var _hori = keyboard_check(ord("D")) - keyboard_check(ord("A"));
 var _onGround = place_meeting(x, y + 1, _solids);
@@ -52,20 +53,4 @@ collide(_solids);
 if (keyboard_check_pressed(ord("H"))) {
 	instance_create_layer(mouse_x, mouse_y, layer, choose(objPickupHeart, objPickupHalfHeart));	
 }
-
-if (place_meeting(x, y, _obstacles)) and (iFrames <= 0) {
-	heartArray[array_length(heartArray) - 1].on_damage();
-	ySpd = -5;
-	xSpd += choose(-2, 2);
-	
-	objCamera.camera_shake = 2;
-	objCamera.impact = 4;
-	flash = 8;
-	spring_speed_set("lastHeartAnimation", choose(-2, 2));
-	
-	if (array_length(heartArray) <= 0) {
-		room_goto(roomGameOver);
-	}
-}
-
 	

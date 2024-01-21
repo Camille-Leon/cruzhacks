@@ -46,9 +46,11 @@ function remap(_val, _from1, _to1, _from2, _to2) {
 }
 
 function player_change_face(_frame, _time){
-	with (objPlayer) {
-		playerFaceFrame = _frame
-		faceTimer = _time;
+	if (instance_exists(objPlayer)) {
+		with (objPlayer) {
+			playerFaceFrame = _frame
+			faceTimer = _time;
+		}
 	}
 }
 

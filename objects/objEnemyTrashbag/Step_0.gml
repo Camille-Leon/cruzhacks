@@ -16,9 +16,9 @@ xSpd = lerp(xSpd, 0, 0.05)
 ySpd += grv;
 
 if !(_onGround) {
-	image_index = 1;
+	sprite_index = sprTrashbagAir;
 } else {
-	image_index = 0;	
+	sprite_index = sprTrashbagGround;
 }
 
 collide_bounce(_solids, 0.3)

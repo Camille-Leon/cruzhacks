@@ -35,9 +35,12 @@
   "properties": [],
   "solid": true,
   "spriteId": {
-    "name": "sprTrashbag",
-    "path": "sprites/sprTrashbag/sprTrashbag.yy",
+    "name": "sprTrashbagGround",
+    "path": "sprites/sprTrashbagGround/sprTrashbagGround.yy",
   },
-  "spriteMaskId": null,
+  "spriteMaskId": {
+    "name": "sprTrashbagGround",
+    "path": "sprites/sprTrashbagGround/sprTrashbagGround.yy",
+  },
   "visible": true,
 }
