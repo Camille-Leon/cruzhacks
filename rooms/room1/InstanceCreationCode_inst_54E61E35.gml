@@ -1,0 +1,1 @@
+txt = "Fire Seeds at Them!";

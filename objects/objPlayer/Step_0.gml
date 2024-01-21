@@ -62,7 +62,9 @@ if (iFrames) {
 
 collide(_solids);
 
-if (keyboard_check_pressed(ord("H"))) {
-	instance_create_layer(mouse_x, mouse_y, layer, choose(objPickupHeart, objPickupHalfHeart));	
+if collision_circle(x, y, 20, objSign, false, false) != noone
+{
+    objSign.textToggle = 255
+}else{
+	objSign.textToggle = 0	
 }
-	
