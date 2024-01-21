@@ -10,6 +10,6 @@ if (mouse_check_button_pressed(mb_left)) {
 	var _x = x + lengthdir_x(11, pointingDirection) + lengthdir_x(2, pointingDirection + 90);
 	var _y = y + lengthdir_y(11, pointingDirection) + lengthdir_y(2, pointingDirection + 90);
 	var _grenade = instance_create_layer(_x, _y, layer, objGrenadeBasic);
-	_grenade.xSpd = lengthdir_x(7, point_direction(x, y, mouse_x, mouse_y));
-	_grenade.ySpd = lengthdir_y(7, point_direction(x, y, mouse_x, mouse_y));	
+	_grenade.xSpd = lengthdir_x(global.gPower * 7, point_direction(x, y, mouse_x, mouse_y));
+	_grenade.ySpd = lengthdir_y(global.gPower * 7, point_direction(x, y, mouse_x, mouse_y));	
 }
