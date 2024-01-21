@@ -1,1 +1,1 @@
-txt = "Nice! You Found Dirt! Fire a seed at it and you will be rewarded for improving the Planet!";
+txt = "Plant Seeds! The ones you shoot.";
