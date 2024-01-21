@@ -1,5 +1,4 @@
 processImpact
-show_debug_message("TET")
 
 flash = clamp(flash - 1, 0, 120);
 iFrames = clamp(iFrames - 1, 0, 120);

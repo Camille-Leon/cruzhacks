@@ -33,7 +33,7 @@
   "physicsShapePoints": [],
   "physicsStartAwake": true,
   "properties": [],
-  "solid": true,
+  "solid": false,
   "spriteId": {
     "name": "sprTrashbagGround",
     "path": "sprites/sprTrashbagGround/sprTrashbagGround.yy",

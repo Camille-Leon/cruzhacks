@@ -10,7 +10,7 @@ speedTemp = speed;
 
 repeat 3 {
 	var _dir = irandom(360);
-	instance_create_layer(x + lengthdir_x(radius, _dir), y + lengthdir_y(radius, _dir), layer, objEffectLine, {
+	instance_create_layer(x + lengthdir_x(radius - 16, _dir), y + lengthdir_y(radius - 16, _dir), layer, objEffectLine, {
 		direction: _dir	
 	});
 }

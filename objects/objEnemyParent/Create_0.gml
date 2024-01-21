@@ -9,8 +9,8 @@ flash = 0;
 
 on_damage = function(_damage) {
 	if (iFrames <= 0) {
-		iFrames = 30;
-		flash = 4;
+		iFrames = 60;
+		flash = 6;
 		hp -= _damage;
 	}
 };

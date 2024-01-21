@@ -25,8 +25,9 @@ if (untilExplosion <= 0) {
 		}
 		var _pos = 1 - (point_distance(x, y, _other.x, _other.y) / 32);
 		var _dir = point_direction(x, y, _other.x, _other.y - _other.sprite_height / 2 );
-		_other.xSpd = lengthdir_x(_pos * 12, _dir);
-		_other.ySpd = lengthdir_y(_pos * 12, _dir);	
+		_other.xSpd += lengthdir_x(_pos * 12, _dir);
+		_other.ySpd += lengthdir_y(_pos * 12, _dir);	
 	})
+	
 	instance_destroy()
 }
