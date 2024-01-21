@@ -8,6 +8,7 @@ var _solids = layer_tilemap_get_id(layer_get_id("Solid"));
 
 if (place_meeting(x, y + 1, objDirtZone)) and !(animating) {
 	animating = true;
+	dirt = instance_place(x, y + 1, objDirtZone);
 }
 
 if (animating) {
