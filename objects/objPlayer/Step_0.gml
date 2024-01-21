@@ -41,7 +41,7 @@ if (_onGround) {
 }
 
 var _friction = _onGround ? 0.3 : 0.1
-xSpd = lerp(xSpd, _hori * moveSpeed, _friction);
+xSpd = lerp(xSpd, _hori * moveSpeed, _friction) * global.pSpeed;
 ySpd += grv;
 
 xScaleOffset = spring("xScaleOffset", xScaleOffset, 0);

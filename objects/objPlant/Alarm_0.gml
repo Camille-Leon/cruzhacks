@@ -1,4 +1,4 @@
-var _whichPickup = irandom(2)
+var _whichPickup = irandom(4)
 var _object;
 
 switch _whichPickup {
@@ -10,6 +10,12 @@ switch _whichPickup {
 	break;
 	case 2:
 		_object = objPickupCarrot;
+	break;
+	case 3:
+		_object = objPickupLavender;
+	break;
+	case 4:
+		_object = objPickupPepper;
 	break;
 }
 

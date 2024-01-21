@@ -1,0 +1,1 @@
+textToggle = 0

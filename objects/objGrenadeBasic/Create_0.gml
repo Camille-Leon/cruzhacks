@@ -1,6 +1,6 @@
 event_inherited();
 
-untilExplosion = 120;
+untilExplosion = 120 + 60;
 
 dmg = 1;
 

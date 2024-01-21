@@ -23,6 +23,13 @@ if (instance_exists(objPlayer)) {
 		shader_reset();
 	}
 
+	var _sign = instance_place(objPlayer.x - 8, objPlayer.y - 8, objSign);
+	if (_sign != noone) {
+		draw_set_color(c_black)
+		draw_rectangle((camera_width / 2) - (string_width(_sign.txt) / 2) - 4, camera_height - string_height(_sign.txt) - 8 - (string_height(_sign.txt) / 2) - 4, (camera_width / 2) + (string_width(_sign.txt) / 2) + 4, camera_height - 4, false);
+		draw_set_color(c_white)
+		draw_text(camera_width / 2, camera_height - string_height(_sign.txt) - 8, _sign.txt);
+	}		
 }
 
 draw_set_color(c_black)

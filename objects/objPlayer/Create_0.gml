@@ -34,3 +34,5 @@ moveSpeed = 2;
 
 xScaleOffset = 0;
 yScaleOffset = 0;
+
+global.pSpeed = 1

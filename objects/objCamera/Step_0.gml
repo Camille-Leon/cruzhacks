@@ -6,6 +6,7 @@ if (_camera) {
 	processImpact
 	
 	transitionAmount += 0.025;
+	camera_zoom = lerp(camera_zoom, curve(0, 0.5, (transitionAmount - 0.75) * 0.5, animTransition, 1) + 0.5, 0.1);
 	
 	camera_shake = lerp(camera_shake, 0, 0.1);
 	

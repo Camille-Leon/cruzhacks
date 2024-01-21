@@ -2,9 +2,8 @@ event_inherited();
 
 image_speed = 0;
 
-
-txt = "Carrot - Seed Fire Speed Up"
+txt = "Pepper - DMG Up"
 
 onPickup = function() {
-	global.gPower += 0.05;
+	global.dmg += 0.05;
 }

@@ -9,6 +9,9 @@ equipped = false;
 xSpd = 0;
 ySpd = 0;
 
+fireRate = 17;
+maxFireRate = fireRate;
+
 toss = function (_direction) {
 	xSpd = lengthdir_x(8, _direction);
 	ySpd = lengthdir_y(8, _direction);

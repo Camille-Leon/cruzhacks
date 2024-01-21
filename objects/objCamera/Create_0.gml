@@ -1,8 +1,10 @@
 camera_width = 320;
 camera_height = 240;
 camera_angle = 0;
-camera_zoom = 1;
+camera_zoom = 0;
 camera_shake = 0;
+
+draw_set_font(dntGame);
 
 transition = 1; // In 1 is out
 transitionAmount = 0;
