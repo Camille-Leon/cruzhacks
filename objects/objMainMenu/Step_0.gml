@@ -1,5 +1,12 @@
 if (keyboard_check_pressed(vk_space)) {
-	room_goto(room1);
+	if (objCamera.transition = 1) {
+		objCamera.transition = 0;
+		objCamera.transitionAmount = 0;
+	}	
+}
+
+if (objCamera.transitionAmount >= 1) and (objCamera.transition = 0) {
+	room_goto(room1);	
 }
 
 

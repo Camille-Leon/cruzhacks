@@ -16,6 +16,10 @@ function spring(_id, _value, _target, _tension = 0.07, _damping = 0.1){
     
 }
 
+function curve(_val1, _val2, _amount, _curvename, _curveindex) {
+    return lerp(_val1, _val2, animcurve_channel_evaluate(animcurve_get_channel(_curvename, _curveindex), _amount))
+}
+
 function spring_speed_set(_id, _value) {
     if !(variable_instance_exists(id, "spring_manager")) {
         spring_manager = {};    

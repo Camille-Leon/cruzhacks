@@ -5,6 +5,8 @@ if (_camera) {
 	
 	processImpact
 	
+	transitionAmount += 0.025;
+	
 	camera_shake = lerp(camera_shake, 0, 0.1);
 	
 	camera_angle = camera_shake / 4

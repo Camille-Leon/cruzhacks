@@ -11,6 +11,7 @@ if (faceTimer <= 0) {
 var _solids = layer_tilemap_get_id(layer_get_id("Solid"));
 
 var _hori = keyboard_check(ord("D")) - keyboard_check(ord("A"));
+var _gance = keyboard_check(ord("G"))
 var _onGround = place_meeting(x, y + 1, _solids);
 
 if (_onGround) {
@@ -20,6 +21,18 @@ if (_onGround) {
 	}
 	if (_hori != 0) {
 		sprite_index = sprPlayerWalk;	
+	}else if (_gance != 0) {
+		sprite_index = sprPlayerG;
+		playerFaceFrame = 4;
+		faceTimer = 60;
+		if (image_speed == -1 && image_index < 1) {
+		   image_index = 0;
+		   image_speed = 1;
+		}
+		else if (image_speed == 1 && image_index > image_number - 2) {
+		   image_index = image_number - 1;
+		   image_speed = -1;
+		}
 	} else {
 		sprite_index = sprPlayerIdle;	
 	}

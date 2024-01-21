@@ -25,7 +25,14 @@ if (instance_exists(objPlayer)) {
 
 }
 
-draw_text_transformed(0, 0, string(fps) + " FPS", 0.5, 0.5, 0);
+draw_set_color(c_black)
+if (transition == 0) {
+	var _x = curve(-(camera_width + 4), 0, transitionAmount, animTransition, 0); 
+} else {
+	var _x = curve(0, camera_width + 4, transitionAmount, animTransition, 0); 
+}	
+draw_rectangle(_x, 0, _x + camera_width + 1, camera_height + 1, false);
+draw_set_color(c_white)
 
 surface_reset_target()
 

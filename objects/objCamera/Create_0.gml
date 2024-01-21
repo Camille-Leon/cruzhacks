@@ -4,8 +4,8 @@ camera_angle = 0;
 camera_zoom = 1;
 camera_shake = 0;
 
-transition = 0; // In 1 is out
-transitionAmount = 1;
+transition = 1; // In 1 is out
+transitionAmount = 0;
 
 peekAmount = 4;
 

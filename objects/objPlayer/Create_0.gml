@@ -13,6 +13,10 @@ takeDamage = function(_removeHeart = false) {
 	player_change_face(6, 60);
 	iFrames = 60;
 	
+	if (instance_exists(objGrenadeLauncher)) {
+		objGrenadeLauncher.toss(point_direction(x, y - sprite_height / 2, mouse_x, mouse_y));
+	}	
+	
 	if (_removeHeart) {
 		array_pop(heartArray);	
 	}
