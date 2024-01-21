@@ -1,8 +1,11 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "objDirtZone",
-  "eventList": [],
+  "name": "objPlant",
+  "eventList": [
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":2,"isDnD":false,},
+  ],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
@@ -26,9 +29,9 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "sprHurtZone",
-    "path": "sprites/sprHurtZone/sprHurtZone.yy",
+    "name": "sprFinger",
+    "path": "sprites/sprFinger/sprFinger.yy",
   },
   "spriteMaskId": null,
-  "visible": false,
+  "visible": true,
 }

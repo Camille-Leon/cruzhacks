@@ -5,16 +5,30 @@ event_inherited();
 imageRotation -= xSpd * 3
 
 var _solids = layer_tilemap_get_id(layer_get_id("Solid"));
-var _onGround = place_meeting(x, y + 1, _solids);
 
-xSpd = lerp(xSpd, 0, 0.03)
+if (place_meeting(x, y + 1, objDirtZone)) and !(animating) {
+	animating = true;
+}
+
+if (animating) {
+	bounceAmount = 0;
+	yAnimation += (0.1 + yAnimation * 0.1); // Ease into the gruond
+	imageRotation += yAnimation;
+	if (yAnimation >= sprite_height + 1) {
+		instance_destroy()	
+	}
+	xSpd = lerp(xSpd, 0, 0.2)
+}
+
 ySpd += grv;
-
 collide_bounce(_solids, bounceAmount)
 
-untilExplosion--
+if !(animating) {
+	xSpd = lerp(xSpd, 0, 0.03)
+	untilExplosion--
+}
 
-if (untilExplosion <= 0) {
+if (untilExplosion <= 0) and !(animating) {
 	instance_create_layer(x + irandom_range(-8, 8), y + irandom_range(-8, 8), "VFX", objEffectExplosion);
 	objCamera.camera_shake = 4;
 	objCamera.impact = 4;
@@ -34,15 +48,4 @@ if (untilExplosion <= 0) {
 	})
 	
 	instance_destroy()
-}
-
-if (_onGround && place_meeting(x, y + 1, objDirtZone)){
-	untilExplosion = 9999999
-	
-	repeat 10 {
-		x--;
-	}
-	
-		
-	
 }

@@ -1,3 +1,3 @@
 event_inherited();
-hp = 4;
+hp = 2;
 randomVariable = random(1)

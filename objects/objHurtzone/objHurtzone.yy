@@ -30,5 +30,5 @@
     "path": "sprites/sprHurtZone/sprHurtZone.yy",
   },
   "spriteMaskId": null,
-  "visible": true,
+  "visible": false,
 }

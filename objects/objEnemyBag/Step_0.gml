@@ -9,6 +9,6 @@ if (iFrames) {
 }
 
 xSpd = lerp(xSpd, sin((current_time + randomVariable * 50) / 1000) * 1, 0.05)
-ySpd = lerp(ySpd, 0, 0.1);
+ySpd = lerp(ySpd, (sin((current_time + randomVariable * 50) / 50) * 0.5) + 0.02, 0.1);
 
 collide_bounce(_solids, 0.8)
