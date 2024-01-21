@@ -1,8 +1,11 @@
 event_inherited();
 
+
+
 imageRotation -= xSpd * 3
 
 var _solids = layer_tilemap_get_id(layer_get_id("Solid"));
+var _onGround = place_meeting(x, y + 1, _solids);
 
 xSpd = lerp(xSpd, 0, 0.03)
 ySpd += grv;
@@ -31,4 +34,15 @@ if (untilExplosion <= 0) {
 	})
 	
 	instance_destroy()
+}
+
+if (_onGround && place_meeting(x, y + 1, objDirtZone)){
+	untilExplosion = 9999999
+	
+	repeat 10 {
+		x--;
+	}
+	
+		
+	
 }

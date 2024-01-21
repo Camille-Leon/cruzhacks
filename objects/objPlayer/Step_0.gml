@@ -17,8 +17,6 @@ if (_onGround) {
 	if (sprite_index == sprPlayerJump) {
 		yScaleOffset -= 0.2;
 		xScaleOffset += 0.2;	
-		
-		audio_play_sound(sndLand, 0, false)
 	}
 	if (_hori != 0) {
 		sprite_index = sprPlayerWalk;	
@@ -41,7 +39,6 @@ if (_onGround) and (keyboard_check_pressed(ord("W"))) {
 	ySpd = -4.5; // Jumping	
 	xScaleOffset += 0.3;
 	yScaleOffset -= 0.3;
-	audio_play_sound(sndJump, 0, false)
 }
 
 if (iFrames) {
