@@ -22,6 +22,7 @@ if (untilExplosion <= 0) {
 			_other.on_damage(dmg);
 			objCamera.impact = 6;
 			objCamera.camera_shake = 8;
+			audio_play_sound(sndThemHurt, 0, false)
 		}
 		var _pos = 1 - (point_distance(x, y, _other.x, _other.y) / 32);
 		var _dir = point_direction(x, y, _other.x, _other.y - _other.sprite_height / 2 );

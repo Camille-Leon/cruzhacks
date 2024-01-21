@@ -12,6 +12,7 @@ takeDamage = function(_removeHeart = false) {
 	// Yippee
 	player_change_face(6, 60);
 	iFrames = 60;
+	audio_play_sound(sndYouHurt, 0, false)
 	
 	if (_removeHeart) {
 		array_pop(heartArray);	

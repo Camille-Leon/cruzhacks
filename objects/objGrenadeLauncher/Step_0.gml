@@ -6,6 +6,7 @@ y = lerp(y, (objPlayer.y - objPlayer.sprite_height / 2) + lengthdir_y(24, pointi
 pointingDirection -= angle_difference(pointingDirection, point_direction(objPlayer.x, objPlayer.y - objPlayer.sprite_height / 2, mouse_x, mouse_y)) / 2;
 
 if (mouse_check_button_pressed(mb_left)) {
+	audio_play_sound(sndShoot, 0, false)
 	var _x = x + lengthdir_x(11, pointingDirection) + lengthdir_x(2, pointingDirection + 90);
 	var _y = y + lengthdir_y(11, pointingDirection) + lengthdir_y(2, pointingDirection + 90);
 	var _grenade = instance_create_layer(_x, _y, layer, objGrenadeBasic);

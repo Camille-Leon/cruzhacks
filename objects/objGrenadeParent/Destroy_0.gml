@@ -1,0 +1,1 @@
+audio_play_sound(sndBoom, 0, false)
