@@ -3,7 +3,7 @@ if (iFrames <= 0) {
 	
 	var _otherDirection = point_direction(x, y, other.x, other.y);
 	
-	ySpd = sign(other.y - y) * 4;
+	ySpd = -5;
 	xSpd = lengthdir_x(-5, _otherDirection);
 	
 	other.ySpd = lengthdir_y(5, _otherDirection);
