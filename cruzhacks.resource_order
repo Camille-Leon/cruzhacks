@@ -51,6 +51,7 @@
     {"name":"sprTrashbagGround","order":10,"path":"sprites/sprTrashbagGround/sprTrashbagGround.yy",},
     {"name":"objEnemyBody","order":2,"path":"objects/objEnemyBody/objEnemyBody.yy",},
     {"name":"sprPlayerFace","order":7,"path":"sprites/sprPlayerFace/sprPlayerFace.yy",},
+    {"name":"scrGlobal","order":24,"path":"scripts/scrGlobal/scrGlobal.yy",},
     {"name":"sprMenuBG","order":15,"path":"sprites/sprMenuBG/sprMenuBG.yy",},
     {"name":"objPickupHalfHeart","order":1,"path":"objects/objPickupHalfHeart/objPickupHalfHeart.yy",},
     {"name":"sndJump","order":5,"path":"sounds/sndJump/sndJump.yy",},

@@ -75,6 +75,7 @@
     {"id":{"name":"objEffectExplosion","path":"objects/objEffectExplosion/objEffectExplosion.yy",},},
     {"id":{"name":"objEnemyBody","path":"objects/objEnemyBody/objEnemyBody.yy",},},
     {"id":{"name":"sprPlayerFace","path":"sprites/sprPlayerFace/sprPlayerFace.yy",},},
+    {"id":{"name":"scrGlobal","path":"scripts/scrGlobal/scrGlobal.yy",},},
     {"id":{"name":"scrSpring","path":"scripts/scrSpring/scrSpring.yy",},},
     {"id":{"name":"objDirtZone","path":"objects/objDirtZone/objDirtZone.yy",},},
     {"id":{"name":"sprMenuBG","path":"sprites/sprMenuBG/sprMenuBG.yy",},},
