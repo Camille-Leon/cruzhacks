@@ -1,4 +1,4 @@
-pointingDirection = 0;
+pointingDirection = choose(-45, 45);
 
 image_speed = 0;
 

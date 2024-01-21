@@ -8,7 +8,7 @@ if (faceTimer <= 0) {
 	playerFaceFrame = 0;	
 }
 
-var _solids = layer_tilemap_get_id(layer_get_id("Solid"));
+var _solids = [layer_tilemap_get_id(layer_get_id("Solid")), objWoodenBox];
 
 var _hori = keyboard_check(ord("D")) - keyboard_check(ord("A"));
 var _gance = keyboard_check(ord("G"))

@@ -20,6 +20,7 @@
     {"name":"Tile Sets","order":1,"path":"folders/Tile Sets.yy",},
     {"name":"Timelines","order":6,"path":"folders/Timelines.yy",},
     {"name":"Zones","order":19,"path":"folders/Objects/Zones.yy",},
+    {"name":"Hazards","order":21,"path":"folders/Objects/Hazards.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"objPlayer","order":20,"path":"objects/objPlayer/objPlayer.yy",},
@@ -29,6 +30,7 @@
     {"name":"objPickupHeart","order":1,"path":"objects/objPickupHeart/objPickupHeart.yy",},
     {"name":"sprPlayerG","order":28,"path":"sprites/sprPlayerG/sprPlayerG.yy",},
     {"name":"sprPlayerJump","order":30,"path":"sprites/sprPlayerJump/sprPlayerJump.yy",},
+    {"name":"sprWoodenBox","order":33,"path":"sprites/sprWoodenBox/sprWoodenBox.yy",},
     {"name":"sndYippee","order":7,"path":"sounds/sndYippee/sndYippee.yy",},
     {"name":"tilObstacle","order":1,"path":"tilesets/tilObstacle/tilObstacle.yy",},
     {"name":"sndThemHurt","order":6,"path":"sounds/sndThemHurt/sndThemHurt.yy",},

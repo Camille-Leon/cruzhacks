@@ -11,6 +11,7 @@ repeat 5 {
 takeDamage = function(_removeHeart = false) {
 	// Yippee
 	player_change_face(6, 60);
+	audio_play_sound(sndYouHurt, 0, false)
 	iFrames = 60;
 	
 	if (instance_exists(objGrenadeLauncher)) {
